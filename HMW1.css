@@ -1,0 +1,276 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 21px;
+	color: white;
+	margin: 0;
+}
+@media (max-width: 500px){
+	body{
+		font-size: 16px;
+	}
+}
+header {
+	height: 500px;
+	width: 100%;
+	margin-top: 60px;
+	background-image: url(images/Location2.png);
+	background-size: cover;
+	background-position: center;
+}
+@media (max-width: 500px){
+	header{
+		height: 300px;
+	}
+}
+header::before {
+	height: 500px;
+	width: 100%;
+	position: absolute;
+	content: '';
+	background-color: rgba(0, 0, 0, 0.5); 
+}
+@media (max-width: 500px){
+	header::before{
+		height: 300px;
+	}
+}
+#news {
+	height: 360px;
+	width: 80%;
+	position: relative;
+	margin: auto;
+	padding: 20px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+@media (max-width: 500px){
+	#news{
+		height: 160px;
+	}
+}
+#news strong { 
+	font-size: 2em;
+}
+@media (max-width: 500px){
+	#news strong{
+		font-size: 1.5em;
+	}
+}
+#news .buttons{
+	margin: 15px 20px 15px 0px;
+}
+header nav {
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	background-color: #1a1a1a;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+@media (max-width: 500px){
+	header nav{
+		position: absolute;
+	}
+}
+.logo{
+	height: 95%;
+}
+#nav_links a{
+	padding: 16px;
+	cursor: pointer;
+}
+#nav_links a:hover {
+	background-color: #075dc6;
+}
+@media (max-width: 500px){
+	#nav_links{
+		display: none;
+	}
+}
+#menu {
+	display: none;
+}
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+@media (max-width: 500px){
+	#menu{
+		display: block;
+	}
+}
+.buttons a{
+	padding: 10px 50px;
+	cursor: pointer;
+	background-color: #075dc6;
+	color: white;
+	font-weight: bold;
+}
+.buttons a:hover {
+	background-color: #05418b;
+}
+@media (max-width: 500px){
+	nav .buttons{
+		display: none;
+	}
+}
+section {
+	width: 80%;
+	position: relative;
+	margin: -100px auto 0px;
+	background-color: white;
+	color: black;
+}
+@media (max-width: 500px){
+	section{
+		text-align: center;
+	}
+}
+
+#main {
+	padding: 20px;
+}
+h1 {
+	margin: 0px;
+	line-height: 1;
+}
+#info {
+	font-family: 'Kiwi Maru',sans-serif;
+	font-size: .8em;
+	font-style: oblique;
+	color: blue;
+	text-align: left;
+}
+#courses {
+	font-family: 'New Tegomin',sans-serif;
+	font-size: 1.25em;
+	font-style: normal;
+	color: green;
+	text-align: center;
+}
+#courses_list {
+	margin: 0px -10px 50px;
+	display: flex;
+	align-items: center;
+}
+@media (max-width: 500px){
+	#courses_list {
+		margin: 0px 0px 50px;
+		flex-wrap: wrap;
+	}
+}
+#courses_list div {
+	flex-grow: 1;
+	/*text-align: center;*/
+	cursor: pointer;
+	padding-bottom: 5px;
+	border: 1px solid lightgrey;
+	margin: 0px 10px;
+	background-color: #075dc6;
+	/*color: white;*/
+	font-size: .7em
+}
+@media (max-width: 500px){
+	#courses_list div {
+		border: 0px;
+		width: 50%;
+		margin: 0px 0px 5px;
+	}
+}
+#courses_list div:hover{
+	background-color: #05418b;
+}
+#courses_list img {
+	width: 100%;
+}
+
+.info_block {
+	padding: 50px 0px;
+	border-top: 1px solid lightgrey;
+	display:flex;
+}
+@media (max-width: 500px){
+	.info_block {
+		flex-direction: column;
+	}
+}
+
+.info_block img{
+	width: 100%;
+	max-width: 50%;
+	border: 1px solid lightgrey;
+}
+@media (max-width: 500px) {
+	.info_block img{
+		max-width: 100%;
+		order:1;
+	}
+}
+.info_block div{
+	width: 100%;
+}
+@media (max-width: 500px) {
+	.info_block div{
+		margin-top: 20px;
+		order:2;
+	}
+}
+.info_block .left{
+	margin-right: 50px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1em;
+	font-style: oblique;
+	color: brown;
+	text-align: right;
+}
+@media (max-width: 500px) {
+	.info_block .left{
+		margin-right: 0px;
+	}
+}
+.info_block .right{
+	margin-left: 50px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: .85em;
+	font-style: italic;
+	color: purple;
+	text-align: left;
+}
+@media (max-width: 500px) {
+	.info_block .right{
+		margin-left: 0px;
+	}
+}
+footer {
+	width: 100%;
+	text-align: center;
+	background-color: #1a1a1a;
+}
+#footer_info{
+	height: 100px;
+	padding: 20px;
+	font-size: .75em;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#social_media img{
+	margin: 10px 5px 0px;
+	width: 25%;
+}
+footer p{
+	height: 20px;
+	margin: 0px;
+	background-color: black;
+	font-size: .6em;
+	font-style: italic;
+}
